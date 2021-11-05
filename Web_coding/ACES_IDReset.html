@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+    
+.container {
+    padding: 10px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.det {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+  }
+    .cancelbtn {
+        width: 100%;
+  }
+</style>
+</head>
+    
+<body>
+    <form action="/action_page.php" method="post">
+    <div class="det">
+        <p style="font-family: Arial, Helvetica, sans-serif">
+            You have been sent to an account reset form. Please fill in the details below.
+        </p>
+    </div>
+    <div class="container">
+        
+        <label for="ppno"><b>Passport Number or Social Security Number</b></label>
+        <input type="text" placeholder="Enter Passport Number or Social Security Number" name="ppno" minlength="8" required>
+
+        <label for="email"><b>Email Address</b></label>
+        <input type="text" placeholder="Enter Email Address" name="email" minlength="7" required>
+            
+        <label for="phone"><b>Phone Number</b></label>
+        <input type="text" placeholder="Enter Phone Number" name ="phone" minlength="10" required>
+        
+        <button type="submit">Submit Form</button>
+        
+    </div>
+    
+    </form>
+
+</body>
+
+</html]>
